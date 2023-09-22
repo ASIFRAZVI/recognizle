@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>recgozil</title>
+<link rel = "stylesheet" href ="signup.css">
+</head>
+<body>
+<div class="container">
+<h2>Assign Tasks</h2>
+<form action="/addtask" method="post">
+  <div class="input-group">
+    <input type="text"  name="name" placeholder="Enter your name" required>
+  </div>
+
+  <div class="input-group">    
+    <input type="email"  name="email"placeholder="Enter your email"  required>
+  </div>
+  <div class="input-group">    
+    <input type="text"  name="description"placeholder="Enter task description"  required>
+  </div>
+  
+
+
+  <div class="button">
+    <button type="submit">Assign Task</button>
+  </div>
+</form>
+</div>
+
+<div class="expense-list">
+  <h3>Tasks List:</h3>
+  <ul id="taskList"></ul>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
